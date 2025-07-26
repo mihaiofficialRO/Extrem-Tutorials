@@ -46,3 +46,21 @@ span[style="color:#2CB2EB"]:before, [style="color: #2CB2EB"]:before {
 }
 /* Sfârșitul iconiței de la Membri Premium */
 /*^^^[mihai a fost aici!!!]^^^Începerea refacerii a temei Extrem-Tutorials^^^*/
+.categoryTitle h2 {
+    display: inline;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 600 !important;
+    background: rgb(45, 121, 218) !important;
+    padding: 2px 15px;
+}
+.main-head h1, .main-head h2, .headline-page h2 {
+    display: inline;
+    background: #2d79da;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 4px 15px;
+    font-weight: 600 !important;
+    font-size: 13px;
+}
