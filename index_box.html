@@ -48,14 +48,14 @@
 								<!--- <img title="{catrow.forumrow.L_FORUM_FOLDER_ALT}" src="{catrow.forumrow.FORUM_FOLDER_IMG}" alt="{catrow.forumrow.L_FORUM_FOLDER_ALT}" /> --->
 							</span>
 							<h{catrow.forumrow.LEVEL} class="hierarchy"><a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a></h{catrow.forumrow.LEVEL}>
-							<br />
-							{catrow.forumrow.FORUM_DESC}
-							<!-- BEGIN switch_moderators_links -->
-							<br />
-							{catrow.forumrow.switch_moderators_links.L_MODERATOR}{catrow.forumrow.switch_moderators_links.MODERATORS}
-							<!-- END switch_moderators_links -->
-							{catrow.forumrow.L_LINKS}{catrow.forumrow.LINKS}
-							<strong>{forumrow.L_SUBFORUM_STR}</strong> {forumrow.SUBFORUMS}
+							<!--- aici am umblat iar <br /> --->
+							<!--- aici am umblat din nou {catrow.forumrow.FORUM_DESC} --->
+							<!--- BEGIN switch_moderators_links --->
+							<!--- aici ascund acest spațiu <br /> --->
+							<!--- ascund moderatorii din subforumuri {catrow.forumrow.switch_moderators_links.L_MODERATOR}{catrow.forumrow.switch_moderators_links.MODERATORS} --->
+							<!--- END switch_moderators_links --->
+							<!--- aici ascund subforumurile {catrow.forumrow.L_LINKS}{catrow.forumrow.LINKS} --->
+							<!--- aici ascund subforumurile iar <strong>{forumrow.L_SUBFORUM_STR}</strong> {forumrow.SUBFORUMS} --->
 						</td>
 						<td class="esc mobile-version-cat">
                                                 <ul>
