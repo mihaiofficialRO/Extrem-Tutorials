@@ -97,9 +97,12 @@
 
 							<span>
 							<!-- BEGIN switch_topic_title -->
-							<a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br />
+                                                        <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">
+                                                        {catrow.forumrow.LATEST_TOPIC_NAME}</a><br />
+							<!--- <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br /> --->
 							<!-- END switch_topic_title -->
-							{catrow.forumrow.USER_LAST_POST}
+                                                        <span class="lastPostUsername">{catrow.forumrow.USER_LAST_POST}</span>
+							<!--- {catrow.forumrow.USER_LAST_POST} --->
 							</span>
 						</td>
 					</tr>
@@ -111,7 +114,7 @@
 		</div>
 	<!-- END tablefoot -->
 <!-- END catrow -->
-</div>
+<!--- </div> --->
 
 <!-- BEGIN switch_forum_images -->
 <div class="main">
