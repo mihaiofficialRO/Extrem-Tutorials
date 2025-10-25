@@ -6,32 +6,33 @@
 	<!-- BEGIN tablehead -->
 		<div class="main-content">
                 <!--- <div class="headline-page"></div> --->
-                  <div class="headline-page" id="tcatc7">{catrow.tablehead.L_FORUM}</div>
+			<div class="headline-page" id="tcatc7">
+                        <h2>{catrow.tablehead.L_FORUM}</h2></div>
 		</div>
-  
                 <div class="mark-all for-wide">
                 <a href="https://fgsuport.forumgratuit.ro/forum?mark=forums" class="qlabs_tooltip_top qlabs_tooltip_style_3 cursor_pointer" style="">
                 <i class="fa fa-eye"></i>
                 <span style="width: 180px;">Marcheaza toate forumurile ca fiind citite</span>
                 </a>
-               </div>
-               <div class="mark-all for-mobile">
-               <a href="https://fgsuport.forumgratuit.ro/forum?mark=forums" class="qlabs_tooltip_diagonal_left_bottom qlabs_tooltip_style_32 cursor_pointer" style="">
-               <i class="fa fa-eye"></i>
-               <span style="width: 180px;">Marcheaza toate forumurile ca fiind citite</span>
-               </a>
-               </div>
+                </div>
+                <div class="mark-all for-mobile">
+                <a href="https://fgsuport.forumgratuit.ro/forum?mark=forums" class="qlabs_tooltip_diagonal_left_bottom qlabs_tooltip_style_32 cursor_pointer" style="">
+                <i class="fa fa-eye"></i>
+                <span style="width: 180px;">Marcheaza toate forumurile ca fiind citite</span>
+                </a>
+                </div>
 		<!--- <div class="main-content"> --->
-			<table class="table table-striped table-frms" id="catc7">
+                       <table class="table table-striped table-frms" id="catc7">
+			<!--- <table cellspacing="0" class="table"> --->
 				<thead>
 					<tr>
-						<th class="tcl">{L_FORUM}</th>
-                                                <th class="tc3">{L_POSTS}</th>
-                                                <th class="tcr">{L_LASTPOST}</th>
-                                                <!--- <th class="tcl">{L_FORUM}</th>
-						<th class="tc2">{L_TOPICS}</th>
-						<th class="tc3">{L_POSTS}</th>
-						<th class="tcr">{L_LASTPOST}</th> --->
+						<!--- <th class="tc2">{L_TOPICS}</th> --->
+                                                <!--- <th class="tc3">{L_POSTS}</th> --->
+                                                <!--- <th class="tcr">{L_LASTPOST}</th> --->
+                                                <!--- <th class="tcl">{L_FORUM}</th> --->
+						<!--- <th class="tc2">{L_TOPICS}</th> --->
+						<!--- <th class="tc3">{L_POSTS}</th> --->
+						<!---<th class="tcr">{L_LASTPOST}</th> --->
 					</tr>
 				</thead>
 				<tbody class="statused">
@@ -39,59 +40,66 @@
 
 	<!-- BEGIN forumrow -->
 					<tr>
-                                        <td class="tcl" style="padding-right: {catrow.forumrow.INC_LEVEL_RIGHT}; padding-left: {catrow.forumrow.INC_LEVEL_LEFT};">
-                                        <span class="status" style="margin-right: -{catrow.forumrow.INC_WIDTH_ICON}; margin-left: -{catrow.forumrow.INC_WIDTH_ICON};">
-                                        <img title="{catrow.forumrow.L_FORUM_FOLDER_ALT}" src="{catrow.forumrow.FORUM_FOLDER_IMG}" alt="{catrow.forumrow.L_FORUM_FOLDER_ALT}" />
-                                        <!--- <td class="tcl" style="padding-right: {catrow.forumrow.INC_LEVEL_RIGHT}; padding-left: {catrow.forumrow.INC_LEVEL_LEFT};"> --->
-                                        <!--- <img title="{catrow.forumrow.L_FORUM_FOLDER_ALT}" src="{catrow.forumrow.FORUM_FOLDER_IMG}" alt="{catrow.forumrow.L_FORUM_FOLDER_ALT}" /> --->
-                                        </span>
-                                        <h{catrow.forumrow.LEVEL} class="hierarchy"><a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a></h{catrow.forumrow.LEVEL}>
-                                        <!--- <h{catrow.forumrow.LEVEL} class="hierarchy"><a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a></h{catrow.forumrow.LEVEL}> --->
-                                        <div class="forumdesc">{catrow.forumrow.FORUM_DESC}</div>
-                                        <!--- <div class="forumdesc">{catrow.forumrow.FORUM_DESC}</div> --->
-                                        </td>
-                                          <!--- <tr>
-						<!--- <td class="tcl" style="padding-right: {catrow.forumrow.INC_LEVEL_RIGHT}; padding-left: {catrow.forumrow.INC_LEVEL_LEFT};"> --->
+						<td class="tcl" style="padding-right: {catrow.forumrow.INC_LEVEL_RIGHT}; padding-left: {catrow.forumrow.INC_LEVEL_LEFT};">
+                                                <span class="status" style="margin-right: -{catrow.forumrow.INC_WIDTH_ICON}; margin-left: -{catrow.forumrow.INC_WIDTH_ICON};">
+                                                <img title="{catrow.forumrow.L_FORUM_FOLDER_ALT}" src="{catrow.forumrow.FORUM_FOLDER_IMG}" alt="{catrow.forumrow.L_FORUM_FOLDER_ALT}" />
+                                                  <!--- <td class="tcl" style="padding-right: {catrow.forumrow.INC_LEVEL_RIGHT}; padding-left: {catrow.forumrow.INC_LEVEL_LEFT};"> --->
 							<!--- <span class="status" style="margin-right: -{catrow.forumrow.INC_WIDTH_ICON}; margin-left: -{catrow.forumrow.INC_WIDTH_ICON};"> --->
 								<!--- <img title="{catrow.forumrow.L_FORUM_FOLDER_ALT}" src="{catrow.forumrow.FORUM_FOLDER_IMG}" alt="{catrow.forumrow.L_FORUM_FOLDER_ALT}" /> --->
 							</span>
-							<!--- <h{catrow.forumrow.LEVEL} class="hierarchy"><a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a></h{catrow.forumrow.LEVEL}> --->
-							<!--- <br /> --->
-							<!--- {catrow.forumrow.FORUM_DESC} --->
+							<h{catrow.forumrow.LEVEL} class="hierarchy"><a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a></h{catrow.forumrow.LEVEL}>
+							<br />
+							{catrow.forumrow.FORUM_DESC}
 							<!-- BEGIN switch_moderators_links -->
-							<!--- <br /> --->
-							<!--- {catrow.forumrow.switch_moderators_links.L_MODERATOR}{catrow.forumrow.switch_moderators_links.MODERATORS} --->
+							<br />
+							{catrow.forumrow.switch_moderators_links.L_MODERATOR}{catrow.forumrow.switch_moderators_links.MODERATORS}
 							<!-- END switch_moderators_links -->
-							<!--- {catrow.forumrow.L_LINKS}{catrow.forumrow.LINKS} --->
-							<!--- <strong>{forumrow.L_SUBFORUM_STR}</strong> {forumrow.SUBFORUMS} --->
-						<!--- </td> --->
-						<td class="tc3"><b>{catrow.forumrow.POSTS}</b> postări
+							{catrow.forumrow.L_LINKS}{catrow.forumrow.LINKS}
+							<strong>{forumrow.L_SUBFORUM_STR}</strong> {forumrow.SUBFORUMS}
+						</td>
+						<td class="esc mobile-version-cat">
+                                                <ul>
+                                                <li class="bigger_element"><b>{catrow.forumrow.POSTS}</b> postări
+                                                </li>
+                                                </ul>
+                                                </td>
+                                                <!--- <td class="tc2">{catrow.forumrow.TOPICS}</td> --->
 						<!--- <td class="tc3">{catrow.forumrow.POSTS}</td> --->
-						<td class="tcr lastpost-cat">
-                                                <!-- BEGIN avatar -->
-                                                <span class="lastpost-avatar">{catrow.forumrow.avatar.LAST_POST_AVATAR}</span>
-                                                <!-- END avatar -->
+						<!--- <td class="tcr"> --->
+                                          
                             <!-- BEGIN ads -->
-							<!--- <span class="AD_LastPA">
+							<span class="AD_LastPA">
                                 <span class="lastpost-avatar"><img src="{catrow.forumrow.ads.IMG}" alt="{catrow.forumrow.ads.TITLE}" /></span>
                                 <span class="AD_LastInfos">
                                     <b><a href="{catrow.forumrow.ads.LINK}">{catrow.forumrow.ads.TITLE}</a></b><br />
                                     {catrow.forumrow.ads.DATE}<br />
                                     {catrow.forumrow.ads.LOCATION}
                                 </span>
-							</span> --->
+							</span>
                             <!-- END ads -->
                             <!-- BEGIN avatar -->
-                            <!--- <span class="lastpost-avatar">{catrow.forumrow.avatar.LAST_POST_AVATAR}</span> --->
+                            <td class="tcr lastpost-cat">
+                            <div class="lastpost-container">
+                            <span class="lastpost-avatar">{catrow.forumrow.avatar.LAST_POST_AVATAR}</span>
+                            <div class="lastpost-info">
+                            <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}" class="lastpost-topic">
+                            {catrow.forumrow.LATEST_TOPIC_NAME}
+                            </a>
+                            <span class="lastPostUsername">{catrow.forumrow.USER_LAST_POST}</span>
+                            </div>
+                            </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            <span class="lastpost-avatar">{catrow.forumrow.avatar.LAST_POST_AVATAR}</span>
                             <!-- END avatar -->
 
 							<span>
 							<!-- BEGIN switch_topic_title -->
-                                                        <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br />
-							<!--- <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br /> --->
+							<a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br />
 							<!-- END switch_topic_title -->
-                                                        <span class="lastPostUsername">{catrow.forumrow.USER_LAST_POST}</span>
-							<!--- {catrow.forumrow.USER_LAST_POST} --->
+							{catrow.forumrow.USER_LAST_POST}
 							</span>
 						</td>
 					</tr>
@@ -103,7 +111,7 @@
 		</div>
 	<!-- END tablefoot -->
 <!-- END catrow -->
-<!--- </div> --->
+</div>
 
 <!-- BEGIN switch_forum_images -->
 <div class="main">
