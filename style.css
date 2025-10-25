@@ -101,17 +101,3 @@ span[style="color:#2CB2EB"]:before, [style="color: #2CB2EB"]:before {
     bottom: 22px;
     margin-left: -2px;
 }
-.forumdesc {
-  font-size: 12px;
-  color: #777;
-}
-.lastpost-avatar img {
-  max-width: 25px;
-  border-radius: 3px;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-.lastPostUsername {
-  font-size: 12px;
-  color: #444;
-}
