@@ -75,3 +75,43 @@ span[style="color:#2CB2EB"]:before, [style="color: #2CB2EB"]:before {
     top: -10px;
     font-size: 11px;
 }
+#fa_toolbar #fa_service {
+    font-size: 0!important;
+}
+#fa_toolbar #fa_service::after {
+  content: 'Fgsuport'!important;
+  font-size: 15;
+}
+#fa_toolbar #fa_icon {
+    display: inline-block !important;
+    visibility: visible !important;
+    background-repeat: no-repeat;
+    background-image: url(https://i.servimg.com/u/f28/11/40/02/06/1211.png);
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+#fa_toolbar {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    top: auto;
+}
+#fa_toolbar #fa_right #notif_list, #fa_menulist, #fa_toolbar #fa_right #notif_list {
+    bottom: 22px;
+    margin-left: -2px;
+}
+.forumdesc {
+  font-size: 12px;
+  color: #777;
+}
+.lastpost-avatar img {
+  max-width: 25px;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.lastPostUsername {
+  font-size: 12px;
+  color: #444;
+}
