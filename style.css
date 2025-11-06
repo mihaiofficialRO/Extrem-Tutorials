@@ -128,3 +128,12 @@ span[style="color:#2CB2EB"]:before, [style="color: #2CB2EB"]:before {
 #page-footer a {
     color: #999!important;
 }
+#pun-about {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--forumline_color);
+    text-align: left;
+    line-height: 150%;
+    padding: .6em 1em;
+    background-color: transparent!important;
+}
