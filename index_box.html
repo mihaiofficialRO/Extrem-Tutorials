@@ -1,233 +1,125 @@
-{JAVASCRIPT}
-<!-- BEGIN switch_user_logged_in -->
-<div id="pun-visit" class="clearfix">
-	<ul>
-			<li><a href="{U_SEARCH_NEW}">{L_SEARCH_NEW}</a></li>
-			<li><a href="{U_SEARCH_SELF}">{L_SEARCH_SELF}</a></li>
-		<li><a href="{U_SEARCH_UNANSWERED}">{L_SEARCH_UNANSWERED}</a></li>
-		<li><a href="{U_MARK_READ}">{L_MARK_FORUMS_READ}</a></li>
-	</ul>
-	<p>{LOGGED_AS}. {LAST_VISIT_DATE}</p>
+<div class="pun-crumbs">
+	<p class="crumbs"><a href="{U_INDEX}"><span>{L_INDEX}</span></a><strong>{NAV_CAT_DESC}</strong></p>
 </div>
-<!-- END switch_user_logged_in -->
-<!-- BEGIN switch_user_logged_out -->
-<div id="pun-visit">
-	<p>{L_NOT_CONNECTED} {L_LOGIN_REGISTER}</p>
-</div>
-<!-- END switch_user_logged_out -->
-
-<!-- BEGIN message_admin_index -->
 <div class="main">
-	<!-- BEGIN message_admin_titre -->
+<!-- BEGIN catrow -->
+	<!-- BEGIN tablehead -->
+		<div class="main-content">
+                <!--- <div class="headline-page"></div> --->
+			<div class="headline-page" id="tcatc7">
+                        <h2>{catrow.tablehead.L_FORUM}</h2></div>
+		<!--- </div> --->
+                <div class="mark-all for-wide">
+                <a href="https://fgsuport.forumgratuit.ro/forum?mark=forums" class="qlabs_tooltip_top qlabs_tooltip_style_3 cursor_pointer" style="">
+                <i class="fa fa-eye"></i>
+                <span style="width: 180px;">Marcheaza toate forumurile ca fiind citite</span>
+                </a>
+                </div>
+                <div class="mark-all for-mobile">
+                <a href="https://fgsuport.forumgratuit.ro/forum?mark=forums" class="qlabs_tooltip_diagonal_left_bottom qlabs_tooltip_style_32 cursor_pointer" style="">
+                <i class="fa fa-eye"></i>
+                <span style="width: 180px;">Marcheaza toate forumurile ca fiind citite</span>
+                </a>
+                </div>
+		<!--- <div class="main-content"> --->
+                       <table class="table table-striped table-frms" id="catc7">
+			<!--- <table cellspacing="0" class="table"> --->
+				<thead>
+					<tr>
+						<!--- <th class="tc2">{L_TOPICS}</th> --->
+                                                <!--- <th class="tc3">{L_POSTS}</th> --->
+                                                <!--- <th class="tcr">{L_LASTPOST}</th> --->
+                                                <!--- <th class="tcl">{L_FORUM}</th> --->
+						<!--- <th class="tc2">{L_TOPICS}</th> --->
+						<!--- <th class="tc3">{L_POSTS}</th> --->
+						<!---<th class="tcr">{L_LASTPOST}</th> --->
+					</tr>
+				</thead>
+				<tbody class="statused">
+	<!-- END tablehead -->
+
+	<!-- BEGIN forumrow -->
+					<tr>
+						<td class="tcl" style="padding-right: {catrow.forumrow.INC_LEVEL_RIGHT}; padding-left: {catrow.forumrow.INC_LEVEL_LEFT};">
+                                                <span class="status" style="margin-right: -{catrow.forumrow.INC_WIDTH_ICON}; margin-left: -{catrow.forumrow.INC_WIDTH_ICON};">
+                                                <!--- <img title="{catrow.forumrow.L_FORUM_FOLDER_ALT}" src="{catrow.forumrow.FORUM_FOLDER_IMG}" alt="{catrow.forumrow.L_FORUM_FOLDER_ALT}" /> --->
+                                                  <!--- <td class="tcl" style="padding-right: {catrow.forumrow.INC_LEVEL_RIGHT}; padding-left: {catrow.forumrow.INC_LEVEL_LEFT};"> --->
+							<!--- <span class="status" style="margin-right: -{catrow.forumrow.INC_WIDTH_ICON}; margin-left: -{catrow.forumrow.INC_WIDTH_ICON};"> --->
+								<!--- <img title="{catrow.forumrow.L_FORUM_FOLDER_ALT}" src="{catrow.forumrow.FORUM_FOLDER_IMG}" alt="{catrow.forumrow.L_FORUM_FOLDER_ALT}" /> --->
+							</span>
+							<h{catrow.forumrow.LEVEL} class="hierarchy"><a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a></h{catrow.forumrow.LEVEL}>
+							<!--- aici am umblat iar <br /> --->
+							<!--- aici am umblat din nou {catrow.forumrow.FORUM_DESC} --->
+							<!--- BEGIN switch_moderators_links --->
+							<!--- aici ascund acest spațiu <br /> --->
+							<!--- ascund moderatorii din subforumuri {catrow.forumrow.switch_moderators_links.L_MODERATOR}{catrow.forumrow.switch_moderators_links.MODERATORS} --->
+							<!--- END switch_moderators_links --->
+							<!--- aici ascund subforumurile {catrow.forumrow.L_LINKS}{catrow.forumrow.LINKS} --->
+							<!--- aici ascund subforumurile iar <strong>{forumrow.L_SUBFORUM_STR}</strong> {forumrow.SUBFORUMS} --->
+						</td>
+						<td class="esc mobile-version-cat">
+                                                <ul>
+                                                <li class="bigger_element"><b>{catrow.forumrow.POSTS}</b> postări
+                                                </li>
+                                                </ul>
+                                                </td>
+                                                <!--- <td class="tc2">{catrow.forumrow.TOPICS}</td> --->
+						<!--- <td class="tc3">{catrow.forumrow.POSTS}</td> --->
+						<td class="tcr">
+                                          
+                            <!-- BEGIN ads -->
+							<span class="AD_LastPA">
+                                <span class="lastpost-avatar"><img src="{catrow.forumrow.ads.IMG}" alt="{catrow.forumrow.ads.TITLE}" /></span>
+                                <span class="AD_LastInfos">
+                                    <b><a href="{catrow.forumrow.ads.LINK}">{catrow.forumrow.ads.TITLE}</a></b><br />
+                                    {catrow.forumrow.ads.DATE}<br />
+                                    {catrow.forumrow.ads.LOCATION}
+                                </span>
+							</span>
+                            <!-- END ads -->
+                            <!-- BEGIN avatar -->
+                            <span class="lastpost-avatar">{catrow.forumrow.avatar.LAST_POST_AVATAR}</span>
+                            <!-- END avatar -->
+                            							<span>
+							<!-- BEGIN switch_topic_title -->
+							<a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br />
+							<!-- END switch_topic_title -->
+							{catrow.forumrow.USER_LAST_POST}
+							</span>
+						</td>
+					</tr>
+	<!-- END forumrow -->
+
+	<!-- BEGIN tablefoot -->
+				</tbody>
+			</table>
+		</div>
+	<!-- END tablefoot -->
+<!-- END catrow -->
+</div>
+
+<!-- BEGIN switch_forum_images -->
+<div class="main">
 	<div class="main-head">
-		<h1 class="page-title">{message_admin_index.message_admin_titre.MES_TITRE}</h1>
+		<h3>{switch_forum_images.TITLE}</h3>
 	</div>
-	<!-- END message_admin_titre -->
-
-	<!-- BEGIN message_admin_txt -->
-	<div id="pun-announcement">
-		<p>{message_admin_index.message_admin_txt.MES_TXT}</p>
+	<div class="main-content container-imgs-list" style="max-height: 500px" id="imageList">
+        {switch_forum_images.SCRIPTS}
 	</div>
-	<!-- END message_admin_txt -->
 </div>
-<!-- END message_admin_index -->
+<!-- END switch_forum_images -->
 
-<!-- BEGIN switch_user_login_form_header -->
-<div class="main">
-<form action="{S_LOGIN_ACTION}" method="post" name="form_login">
-	<div class="user_login_form main-box center">
-		<label><span class="genmed">{L_USERNAME} :</span> <input class="post" type="text" size="10" name="username" /></label> &nbsp;
-		<label><span class="genmed">{L_PASSWORD} :</span> <input class="post" type="password" size="10" name="password" /></label> &nbsp;
-		<label><span class="gensmall">{L_AUTO_LOGIN}</span> <input class="radio" type="checkbox" name="autologin" {AUTOLOGIN_CHECKED} /></label> &nbsp;
-		{S_HIDDEN_FIELDS}<input class="mainoption" type="submit" name="login" value="{L_LOGIN}" />
-
-        <!-- BEGIN switch_social_login -->
-        <div class="mt10">
-            <div class="social_btn">
-                <!-- BEGIN fb_connect -->
-                <div class="fb-login-button"></div>
-                <!-- END fb_connect -->
-                &nbsp;
-                <!-- BEGIN topicit_connect -->
-                <div class="ti-connect"></div>
-                <!-- END topicit_connect -->
-            </div>
-        </div>
-        <!-- END switch_social_login -->
-	</div>
-</form>
+<!-- BEGIN switch_on_index -->
+<div class="main-box clearfix">
+	<ul>
+		<li><a href="{U_TODAY_ACTIVE}">{L_TODAY_ACTIVE}</a></li>
+		<li><a href="{U_TODAY_POSTERS}">{L_TODAY_POSTERS}</a></li>
+		<li><a href="{U_OVERALL_POSTERS}">{L_OVERALL_POSTERS}</a></li>
+	</ul>
+	<!-- BEGIN switch_delete_cookies -->
+	<p class="right">
+		<a href="{switch_on_index.switch_delete_cookies.U_DELETE_COOKIES}" rel="nofollow">{switch_on_index.switch_delete_cookies.L_DELETE_COOKIES}</a>
+	</p>
+	<!-- END switch_delete_cookies -->
 </div>
-<!-- END switch_user_login_form_header -->
-
-{CHATBOX_TOP}
-{BOARD_INDEX}
-
-<!-- BEGIN disable_viewonline -->
-<div class="sky-tabs sky-tabs-pos-top-left sky-tabs-response-to-icons fffx">
-    <input checked class="sky-tab-content-1" id="sky-tab1" name="sky-tabs" type="radio"/>
-    <label for="sky-tab1">
-        <span class="samd">
-            <span><i class="fa fa-users"></i>Cine este online?</span>
-        </span>
-    </label>
-
-    <input class="sky-tab-content-2" id="sky-tab2" name="sky-tabs" type="radio"/>
-    <label for="sky-tab2">
-        <span class="samd">
-            <span><i class="fa fa-bar-chart"></i>Statistici</span>
-        </span>
-    </label>
-
-    <ul class="tabel-stats1">
-        <li class="sky-tab-content-1">
-            <div class="typography">
-                <div class="span1 ico-who">
-                    <i class="fa fa-users"></i>
-                </div>
-                <div class="span9">
-                    <h5>Cine este conectat?</h5>
-                    <p>
-                        {TOTAL_USERS_ONLINE}<br>
-                        {RECORD_USERS}<br><br>
-                        {LOGGED_IN_USER_LIST}<br>
-                        {LEGEND}&nbsp;:&nbsp;{GROUP_LEGEND}
-                    </p>
-                </div>
-            </div>
-        </li>
-
-        <li class="sky-tab-content-2">
-            <div class="typography">
-                <div class="span1 ico-who">
-                    <i class="fa fa-bar-chart"></i>
-                </div>
-                <div class="span9">
-                    <h5>Statistici</h5>
-                    <p>
-                        {TOTAL_POSTS}<br>
-                        {TOTAL_USERS}<br>
-                        {NEWEST_USER}
-                    </p>
-                </div>
-            </div>
-        </li>
-    </ul>
-</div>
-<div class="gradient-effect">
-    <div class="container">
-        <div class="row">
-
-            <!-- TOP LUNAR -->
-            <div class="span4">
-                <div class="module main">
-                    <div class="headline-page">
-                        <span class="que que-small"><i class="fa fa-users"></i> Top lunar</span>
-                    </div>
-                    <div class="main-content sondaj">
-                        <table summary="" width="100%" style="table-layout:auto;">
-                            <tbody>
-                                <tr>
-                                    <td class="abcs row2" width="30%">
-                                        <a href="">TEXT-UL TĂU AICI...</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SONDĂJ -->
-            <div class="span4">
-                <div class="module main">
-                    <div class="headline-page">
-                        <h2><i class="fa fa-question-circle"></i> Sondaj</h2>
-                    </div>
-                    <div class="main-content sondaj">
-                        <p><b>TEXT-UL TĂU AICI...</b></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SUBIECTE ACTIV -->
-            <div class="span4">
-                <div class="module main">
-                    <div class="headline-page">
-                        <span class="que que-small"><i class="fa fa-bar-chart"></i> Subiectele cele mai active</span>
-                    </div>
-                    <div class="main-content">
-                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
-                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
-                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
-                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
-                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
-                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
-                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!--- </div> --->
-<div class="container">
-<div class="span12">
-<div id="pun-about" class="clearfix">Copyright © 2011-2017 <a href="https://www.extrem-tutorials.com">Extrem Tutorials</a>. All right reserved. <br />
-<ul><li>Powered by <a href="http://punbb.informer.com" rel="nofollow">PunBB</a> © Forum Software |&nbsp;<a href="/contact">Contact</a> |&nbsp;</li>
-<li class="fm-links">
-<span class="gensmall">&copy;</span>
-<a href="https://www.forumgratuit.ro/punbb" target="_blank">PunBB</a>&nbsp;|&nbsp;<a name="bottom" href="/contact" rel="nofollow">Contact</a>&nbsp;|&nbsp;<a href="/abuse?page=%2F&amp;report=1" rel="nofollow">Semnaleaza un abuz</a>
-</li>
-</ul>
-</div>
-<br />
-<p class="center"><strong></strong>
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</body>
-</html>
-<!-- END disable_viewonline -->
-
-<!-- BEGIN switch_user_login_form_footer -->
-<form action="{S_LOGIN_ACTION}" method="post" name="form_login">
-	<div class="user_login_form main-box center">
-		<label><span class="genmed">{L_USERNAME} :</span> <input class="post" type="text" size="10" name="username"/></label> &nbsp;
-		<label><span class="genmed">{L_PASSWORD} :</span> <input class="post" type="password" size="10" name="password"/></label> &nbsp;
-		<label><span class="gensmall">{L_AUTO_LOGIN}</span> <input class="radio" type="checkbox" name="autologin" {AUTOLOGIN_CHECKED} /></label> &nbsp;
-		{S_HIDDEN_FIELDS}<input class="mainoption" type="submit" name="login" value="{L_LOGIN}" />
-
-        <!-- BEGIN switch_social_login -->
-        <div class="mt10">
-            <div class="social_btn">
-                <!-- BEGIN fb_connect -->
-                <div class="fb-login-button"></div>
-                <!-- END fb_connect -->
-                &nbsp;
-                <!-- BEGIN topicit_connect -->
-                <div class="ti-connect"></div>
-                <!-- END topicit_connect -->
-            </div>
-        </div>
-        <!-- END switch_social_login -->
-	</div>
-</form>
-<!-- END switch_user_login_form_footer -->
-
-{CHATBOX_BOTTOM}
-
-<!-- BEGIN switch_legend -->
-<ul id="pun-legend">
-	<li>
-		<img src="{FORUM_NEW_IMG}" alt="{L_NEW_POSTS}" loading="lazy" />&nbsp;{L_NEW_POSTS}
-		<img src="{FORUM_IMG}" alt="{L_NO_NEW_POSTS}" loading="lazy" />&nbsp;{L_NO_NEW_POSTS}
-		<img src="{FORUM_LOCKED_IMG}" alt="{L_FORUM_LOCKED}" loading="lazy" />&nbsp;{L_FORUM_LOCKED}
-	</li>
-</ul>
-<!-- END switch_legend -->
-
-{AUTO_DST}
+<!-- END switch_on_index -->
