@@ -64,53 +64,133 @@
 
 <!-- BEGIN disable_viewonline -->
 <div class="sky-tabs sky-tabs-pos-top-left sky-tabs-response-to-icons fffx">
-<input checked="" class="sky-tab-content-1" id="sky-tab1" name="sky-tabs" type="radio"/>
-<label for="sky-tab1">
-<span class="samd">
-<span><i class="fa fa-users"></i>Cine este online?</span>
-</span>
-</label>
-<input class="sky-tab-content-2" id="sky-tab2" name="sky-tabs" type="radio"/>
-<label for="sky-tab2">
-<span class="samd">
-<span><i class="fa fa-bar-chart"></i>Statistici</span>
-</span>
-</label>
-<ul class="tabel-stats1">
-<li class="sky-tab-content-1">
-<div class="typography">
-<div class="span1 ico-who">
-<i class="fa fa-users"></i>
+    <input checked class="sky-tab-content-1" id="sky-tab1" name="sky-tabs" type="radio"/>
+    <label for="sky-tab1">
+        <span class="samd">
+            <span><i class="fa fa-users"></i>Cine este online?</span>
+        </span>
+    </label>
+
+    <input class="sky-tab-content-2" id="sky-tab2" name="sky-tabs" type="radio"/>
+    <label for="sky-tab2">
+        <span class="samd">
+            <span><i class="fa fa-bar-chart"></i>Statistici</span>
+        </span>
+    </label>
+
+    <ul class="tabel-stats1">
+        <li class="sky-tab-content-1">
+            <div class="typography">
+                <div class="span1 ico-who">
+                    <i class="fa fa-users"></i>
+                </div>
+                <div class="span9">
+                    <h5>Cine este conectat?</h5>
+                    <p>
+                        {TOTAL_USERS_ONLINE}<br>
+                        {RECORD_USERS}<br><br>
+                        {LOGGED_IN_USER_LIST}<br>
+                        {LEGEND}&nbsp;:&nbsp;{GROUP_LEGEND}
+                    </p>
+                </div>
+            </div>
+        </li>
+
+        <li class="sky-tab-content-2">
+            <div class="typography">
+                <div class="span1 ico-who">
+                    <i class="fa fa-bar-chart"></i>
+                </div>
+                <div class="span9">
+                    <h5>Statistici</h5>
+                    <p>
+                        {TOTAL_POSTS}<br>
+                        {TOTAL_USERS}<br>
+                        {NEWEST_USER}
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
-<div class="span9">
-<h5>Cine este conectat?</h5>
-<p>
-{TOTAL_USERS_ONLINE}<br>
-{RECORD_USERS}<br><br>
-{LOGGED_IN_USER_LIST}<br>
-{LEGEND}&nbsp;:&nbsp;{GROUP_LEGEND}
-<li class="sky-tab-content-2">
-<div class="typography">
-<div class="span1 ico-who">
-<i class="fa fa-bar-chart"></i>
+<div class="gradient-effect">
+    <div class="container">
+        <div class="row">
+
+            <!-- TOP LUNAR -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <span class="que que-small"><i class="fa fa-users"></i> Top lunar</span>
+                    </div>
+                    <div class="main-content sondaj">
+                        <table summary="" width="100%" style="table-layout:auto;">
+                            <tbody>
+                                <tr>
+                                    <td class="abcs row2" width="30%">
+                                        <a href="">TEXT-UL TĂU AICI...</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SONDĂJ -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <h2><i class="fa fa-question-circle"></i> Sondaj</h2>
+                    </div>
+                    <div class="main-content sondaj">
+                        <p><b>TEXT-UL TĂU AICI...</b></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUBIECTE ACTIV -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <span class="que que-small"><i class="fa fa-bar-chart"></i> Subiectele cele mai active</span>
+                    </div>
+                    <div class="main-content">
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="">TEXT-UL TĂU AICI...</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
-<div class="span9">
-<h5>Statistici</h5>
-<p>
-{TOTAL_POSTS}<br>
-{TOTAL_USERS}<br>
-{NEWEST_USER}
-</p>
-</div>
-</div>
+<!--- </div> --->
+<div class="container">
+<div class="span12">
+<div id="pun-about" class="clearfix">Copyright © 2011-2017 <a href="https://www.extrem-tutorials.com">Extrem Tutorials</a>. All right reserved. <br />
+<ul><li>Powered by <a href="http://punbb.informer.com" rel="nofollow">PunBB</a> © Forum Software |&nbsp;<a href="/contact">Contact</a> |&nbsp;</li>
+<li class="fm-links">
+<span class="gensmall">&copy;</span>
+<a href="https://www.forumgratuit.ro/punbb" target="_blank">PunBB</a>&nbsp;|&nbsp;<a name="bottom" href="/contact" rel="nofollow">Contact</a>&nbsp;|&nbsp;<a href="/abuse?page=%2F&amp;report=1" rel="nofollow">Semnaleaza un abuz</a>
 </li>
 </ul>
 </div>
+<br />
+<p class="center"><strong></strong>
+</p>
 </div>
 </div>
 </div>
 </div>
 </div>
+</body>
+</html>
 <!-- END disable_viewonline -->
 
 <!-- BEGIN switch_user_login_form_footer -->
