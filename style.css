@@ -101,3 +101,30 @@ span[style="color:#2CB2EB"]:before, [style="color: #2CB2EB"]:before {
     bottom: 22px;
     margin-left: -2px;
 }
+.gradient-effect {
+    background: #2d79da;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.35)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 20px;
+}
+#footer {
+    background: #2d79da url(/web/20171105082732im_/https://147.ip-51-255-166.eu/red_cdn/extremtuts/img/texture.png) repeat scroll 50% 100%;
+    color: #fff;
+    margin: 0 auto;
+}
+#page-footer {
+    background: #F8F9FC;
+    color: #777;
+    border-top: 1px solid #C5D5F1;
+}
+#page-footer {
+    padding: 10px 20px;
+    padding-bottom: 0 !important;
+}
+#page-footer a {
+    color: #999!important;
+}
