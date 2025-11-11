@@ -137,3 +137,9 @@ span[style="color:#2CB2EB"]:before, [style="color: #2CB2EB"]:before {
     padding: .6em 1em;
     background-color: transparent!important;
 }
+#wrapper {
+    width: 96%!important;
+}
+#wrapper {
+    width: 1070px !important;
+}
