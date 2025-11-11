@@ -19,8 +19,9 @@
 	<meta name="title" content="{SITENAME_TITLE}{PAGE_TITLE}"/>
 	{T_HEAD_STYLESHEET}
 	{CSS}
-        <link rel="stylesheet" href="https://web.archive.org/web/20171230233632cs_/https://147.ip-51-255-166.eu/red_cdn/extremtuts/css/style.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,700,600italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://web.archive.org/web/20171230233632cs_/https://147.ip-51-255-166.eu/red_cdn/extremtuts/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="search" type="application/opensearchdescription+xml" href="/improvedsearch.xml" title="{SITENAME}"/>
 	<link rel="search" type="application/opensearchdescription+xml" href="{URL_BOARD_DIRECTORY}/search/improvedsearch.xml" title="{SEARCH_FORUMS}"/>
 	<script src="{JQUERY_PATH}" type="text/javascript"></script>
@@ -292,9 +293,8 @@
 	</div>
 </div>
 <!-- END switch_like_popup -->
-
-   <div class="container" id="wrapper">
-    <div class="pun">
+   <!--- <body class="punbb-forum-software" id="skinx"> --->
+   <div id="wrapper" class="container">
      <div class="header-bf">
       <div class="gradient-leader">
        <!-- Header -->
@@ -438,7 +438,7 @@
            </a>
            </li>
            </ul>
-           <li>
+          <!--- <li> --->
         <!--- Backup: Deconectare separată, nu în dropdown --->
         <!--- <li class="right profile custom-profile">
         <a href="https://fgsuport.forumgratuit.ro/login?logout">
@@ -486,8 +486,9 @@
          </div>
         </form>
        </li>
-      </ul>
-     </div>
+      </div>
+      <div class="no-radius alert alert-success maintenance-mode" style="display: block;">   <span class="label label-success">Mentenanta</span> In prezent se efectueaza lucrari de mentenanta la acest forum, ca urmare exista posibilitatea ca anumite facilitati experimentale sa fie nefunctionale. Va recomandam sa apasati din cand in cand pe tasta F5 pentru a curata cache-ul stocat, prin disparitia acestei notificari se subintelege ca lucrarile s-au incheiat cu succes. <span class="fa fa-smile-o"></span> 
+      </div>
 				<!-- BEGIN switch_ticker_new -->
 				<div id="fa_ticker_block" style="padding-top:4px;">
 					<div class="module main">
@@ -522,10 +523,10 @@
 					</div>
 				</div>
 				<!-- END switch_ticker -->
-
+                                <div id="extrem-tutorials">
 				<div id="page-body">
 					<div id="{ID_CONTENT_CONTAINER}"{CLASS_CONTENT_CONTAINER}>
-						<div id="outer-wrapper">
+						<!--- <div id="outer-wrapper"> --->
 							<div id="wrapper">
 								<div id="container">
 									<div id="content">
